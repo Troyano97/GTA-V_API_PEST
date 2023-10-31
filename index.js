@@ -33,6 +33,14 @@ app.get("/api", (req, res) =>{
     res.send ('<h1> hola 3 ${req.params.id}</h1>');
 })
 
+app.put("/api", (req, res)=>{
+    res.json({atributo: "<h1> PUT </h1>"});
+});
+
+app.delete("/api", (req, res)=>{
+    res.json({atributo: "<h1> DELETE </h1>"});
+});
+
 /* app.listen(4000, ()=>{
     console.log("servidor activo");
 }) */
