@@ -1,10 +1,10 @@
 import express from "express";
+import cors from "cors";
 
 const app = express();
 
 app.use(express.json());
-
-app.use(corse());
+app.use(cors());
 
 app.get("/", (req, res) => {
     res.json ({atributo: "<h1> pos 2 </h1>"});
